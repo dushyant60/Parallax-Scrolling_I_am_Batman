@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    min-height : 100vh;
+    /* overflow-x  : hidden; */
+}
+
+header { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100; 
+}
+
+.logo {
+    font-size: 1.8em;
+    color: #fff;
+    pointer-events: none;
+    margin-right: 770px
+}
+
+.navigation a{
+     text-decoration: none;
+     color: #fff;
+     padding: 6px 15px;
+     border-radius: 20px;
+     margin: 0 10px;
+     font-weight: 600;
+}
+
+.navigation a:hover, 
+.navigation a.active {
+    background: #fff;
+    color: #333;
+}
+
+.bats{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120vh; 
+    background: url('background.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#text {
+    position: absolute;
+    font-size: 5em;
+    color:#1b283a;
+    text-shadow: 2px 2px 5px #f9f9f9;
+     
+}
+
+.bats img{
+     position: absolute;
+     top: 0;
+     left: 0; 
+     width: 100%;
+     pointer-events: none;
+}  
+
+.bats img#gate-left{
+    position: fixed;
+    transform: translateX(-282px);
+}
+
+.bats img#gate-right{
+    position: fixed;
+    transform: translate(305px);
+}
+.sec{
+    position: relative;
+    background: #020912;
+    padding: 30px 100px;
+}
+
+.sec h2{
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.sec p{
+    font-size: 1em;
+    color: #fff; 
+    font-weight: 300;
+    text-align: justify;
+}
